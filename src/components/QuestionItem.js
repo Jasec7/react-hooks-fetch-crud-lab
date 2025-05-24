@@ -26,7 +26,7 @@ function QuestionItem({ question, onDelete, onAnswer }) {
       <h5>Prompt: {prompt}</h5>
       <label>
         Correct Answer:
-        <select value={correctIndex.toString()} onChange={handleSelectChange}>{options}</select>
+        <select defaultValue={correctIndex} onChange={handleSelectChange}>{options}</select>
       </label>
       <button onClick={() => onDelete(question.id)}>Delete Question</button>
     </li>

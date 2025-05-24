@@ -53,6 +53,7 @@ function App() {
       ( <QuestionList questions={questions} onDelete={handleDelete} onAnswer={handleAnswer} />)}
     </main>
   );
-}
+  }
+
 
 export default App;
